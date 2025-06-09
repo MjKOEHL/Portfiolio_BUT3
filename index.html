@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TEST Mj K Portfolio</title>
+  <link rel="stylesheet" href="style_general.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- HEADER -->
+
+  <header>
+    <h1>Bonjour, je suis Marjorie</h1>
+    <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#apropos">À propos</a></li>
+          <li class="dropdown">
+            <a href="index.html#competences">Compétences ▾</a>
+            <ul class="submenu">
+              <li><a href="CONCEVOIR.html">Concevoir</a></li>
+              <li><a href="VERIFIER.html">Vérifier</a></li>
+              <li><a href="MAINTENIR.html">Maintenir</a></li>
+              <li><a href="INSTALLER.html">Installer</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#projets">Projets</a></li>
+      
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+  </header>
+
+<!-- /HEADER -->
+
+<!-- SECTION APROPOS -->
+  <section id="apropos">
+    <h2>À propos de moi</h2>
+    <p>Je suis actuellement en formation BUT Génie Electrique et Informatique Industrielle.
+      J'apprends chaque jour à maîtriser les technologies du web...
+      <img src="images/#.jpg" alt="Image moi"></p>
+  
+    <div class="moi">
+      <!-- Colonne 1 -->
+      <section class="colonne">
+        <h2>Ma formation</h2>
+        <p>Je suis actuellement en formation BUT Génie Electrique et Informatique Industrielle.</p>
+        <img src="images/#.jpg" alt="Image moi"> 
+        <a href="https://iut.univ-lyon1.fr/formation/but/but-genie-electrique-et-informatique-industrielle" target="_blank">Voir plus</a>
+      </section>
+  
+      <!-- Colonne 2 -->
+      <section class="colonne">
+        <h2>Moi</h2>
+        <p>Je suis actuellement une étudiante en alternance en entreprise pour valider mon BUT Génie Electrique et Informatique Industrielle.</p>
+        <img src="images/#.jpg" alt="Image moi"> 
+        <a href="https://www.snef.fr/snefconnect/" target="_blank">Voir plus</a>
+      </section>
+    </div>
+
+
+   <section>
+    <h2>Mon parcours</h2>
+    <div class="timeline">
+      <div class="events">
+        <!-- The first `1989` event -->
+        <div class="event BUT3">
+          <!-- The circle is an svg -->
+          <svg
+            class="marker"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+          >
+            <circle cx="6" cy="6" r="6"></circle>
+          </svg>
+          <!-- The event info -->
+          <div class="content">
+            <time>Alternance</time>
+            <div class="text">
+              <p>Je suis en alternance chez la SNEF depuis septembre 2024. 
+                Je participe entant qu'alternante Travaux et Maintenance pour le service SNEF Connect. 
+              </p>
+            </div>
+          </div>  
+        </div>
+
+        <div class="event BUT3">
+          <!-- The circle is an svg -->
+          <svg
+            class="marker"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+          >
+            <circle cx="6" cy="6" r="6"></circle>
+          </svg>
+          <!-- The event info -->
+          <div class="content">
+            <time>BUT 3 </time>
+            <div class="text">
+              <p>En septembre 2024, j'ai entammé ma dernière année de BUT GEII. 
+                Je suis toujours la spécialité Electronique et Systèmes Embarqués.
+              </p>
+            </div>
+          </div>  
+        </div>          
+          
+        <div class="event BUT2">
+          <!-- The circle is an svg -->
+          <svg
+            class="marker"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+          >
+            <circle cx="6" cy="6" r="6"></circle>
+          </svg>
+          <!-- The event info -->
+          <div class="content">
+            <time>Stage</time>
+            <div class="text">
+              <p>J'ai fait mon stage de BUT2 à la SNEF au Bureau d'Etudes et Chiffrage du service Connect. </p>
+            </div>
+          </div>  
+        </div>
+  
+        <div class="event BUT2">
+          <!-- The circle is an svg -->
+          <svg
+            class="marker"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+          >
+            <circle cx="6" cy="6" r="6"></circle>
+          </svg>
+          <!-- The event info -->
+          <div class="content">
+            <time>BUT2</time>
+            <div class="text">
+              <p>J'ai poursuivi ma deuxième année de BUT à l'IUT Lyon1. 
+                J'ai choisi la spécialité Electronique et Systèmes Embarqués.
+              </p>
+            </div>
+          </div>  
+        </div>
+        <!-- etc ... -->
+      </div>
+    </div>
+    <br></br> 
+   </section>
+   <!-- Bouton pour télécharger le CV -->
+   <div class="center-btn">
+    <a href="mon-cv.pdf" class="download-btn" download>
+      <i class="fas fa-file-download" style="margin-right: 8px;"></i>Télécharger mon CV
+    </a>
+  </div>
+    
+  </section>
+
+<!-- /SECTION APROPOS -->
+
+<!-- SECTION COMPTETENCES -->
+
+  <section id="competences">
+    <h2>Les Apprentissages Critiques</h2>
+    <!-- Cartes de compétences ici -->
+      <div class="competences-container">
+        <div class="carte-competence ">
+          <img src="images/projet1.jpg" alt="Image du Projet 1">
+          <h3>CONCEVOIR</h3>
+          <p>Petit résumé du projet...</p>
+          <a href="CONCEVOIR.html" target="_blank">Voir plus</a>
+        </div>
+    
+        <div class="carte-competence ">
+          <img src="images/projet2.jpg" alt="Image du Projet 1">
+          <h3>VERIFIER</h3>
+          <p>Petit résumé du projet...</p>
+          <a href="VERIFIER.html" target="_blank">Voir plus</a>
+        </div>
+
+        <div class="carte-competence">
+          <img src="images/projet3.jpg" alt="Image du Projet 1">
+          <h3>MAINTENIR</h3>
+          <p>Petit résumé du projet...</p>
+          <a href="MAINTENIR.html" target="_blank">Voir plus</a>
+        </div>
+
+        <div class="carte-competence">
+          <img src="images/projet3.jpg" alt="Image du Projet 1">
+          <h3>INSTALLER</h3>
+          <p>Petit résumé du projet...</p>
+          <a href="INSTALLER.html" target="_blank">Voir plus</a>
+        </div>
+      </div>
+  </section>
+
+  <!-- /SECTION COMPETENCES -->
+
+  <!-- SECTION PROJETS -->
+
+<!--<section id="competences">
+    <h2>Compétences</h2>
+
+    <h3 id="competences-front">Front-end</h3>
+    <ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+  
+    <h3 id="competences-back">Back-end</h3>
+    <ul><li>PHP</li><li>MySQL</li></ul>
+  
+    <h3 id="competences-autres">Autres</h3>
+    <ul><li>Git</li><li>Figma</li></ul>
+  </section> -->
+<!--
+  <section id="competences">
+    <div class="carrousel-container">
+        <h2>Compétences</h2>
+        <div class="carrousel">
+            <div class="competence-slide">
+            <h3>Front-end</h3>
+             <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+             </ul>
+            </div>
+            <div class="competence-slide">
+                <h3>Back-end</h3>
+                <ul>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+            <div class="competence-slide">
+                <h3>Oiseaux</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+            <div class="competence-slide">
+                <h3>Poisson</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+            <div class="competence-slide">
+                <h3>Autres</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="carrousel-nav">
+        <span class="nav-dot"></span>
+        <span class="nav-dot"></span>
+        <span class="nav-dot"></span>
+        <span class="nav-dot"></span>
+        <span class="nav-dot"></span>
+         Ajoute autant de billes que tu as de slides 
+        </div>
+  
+        <div class="carrousel-controls">
+      <button id="prev">◀</button>
+      <button id="next">▶</button>
+        </div>
+    </div> -->
+
+  <!-- Pour faire un carrousel : 
+  <div class="carrousel">
+    <div class="competence-slide">HTML</div>
+    <div class="competence-slide">CSS</div>
+    <div class="competence-slide">JavaScript</div>
+    <div class="competence-slide">React</div>
+  </div>-->
+
+<!-- mettre projets à la palce de compétences -->
+  <section id="projets">
+    <h2><a href="PROJETS.html">Mes Projets</a></h2>
+    <div class="carrousel-container">    
+        <div class="carrousel">
+            <div class="projet-slide">
+                <a href="SAE_SCOTT.html">
+                    <img src="images/C_SCOTT.png" alt="Image 1">
+                    <p class="description">Projet de BUT1 : Etude d'une étuve à bois </p>
+                </a>
+            </div>
+            <div class="projet-slide">
+                <a href="SAE_CAPA.html">
+                    <img src="images/C_CAPA.png" alt="Image 2">
+                    <p class="description">Projet de BUT1 : Contôle d'Accès Parking Automatisé</p>
+                </a>
+            </div>
+            <div class="projet-slide">
+                <a href="SAE_ROBOT.html">
+                    <img src="images/C_ROBOT.png" alt="Image 3">
+                    <p class="description">Projet de BUT1 : Carte pilotage Robot</p>
+                </a>
+            </div>
+            <div class="projet-slide">
+              <a href="LUMICUBE.html">
+                  <img src="images/C_LUMICUBE.png" alt="Image 3">
+                  <p class="description">Projet annuel de BUT2 : Cube lumineux</p>
+              </a>
+            </div>
+            <div class="projet-slide">
+              <a href="STAGE.html">
+                <img src="images/projet3.jpg" alt="Image 3">
+                <p class="description">Stage de BUT2 : Bureau d'Etudes et Chiffrage en CFA</p>
+              </a>
+            </div>
+            <div class="projet-slide">
+              <a href="ALTERNANCE.html">
+                <img src="images/airbus.jpg" alt="Image 3">
+                <p class="description">Alternance de BUT3 : Technicienne de Bureau d'Etudes et Maintenance en CFA</p>
+              </a>
+          </div>
+        </div>
+        <div class="carrousel-nav">
+            <span class="nav-dot"></span>
+            <span class="nav-dot"></span>
+            <span class="nav-dot"></span>
+            <span class="nav-dot"></span>
+            <span class="nav-dot"></span>
+            <span class="nav-dot"></span>
+        </div>
+        <div class="carrousel-controls">
+            <button id="prev">◀</button>
+            <button id="next">▶</button>
+        </div>
+    </div>
+</section>
+
+<!-- /SECTION PROJETS -->
+  
+<!-- SECTION CONTACT -->
+
+<section id="contact">
+  <h2>Contactez-moi</h2>
+  <form class="form-contact" action="https://formspree.io/f/xanelpyv" method="POST">
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
+<!-- /SECTION CONTACT -->
+
+<!-- SECTION FOOTER -->
+
+  <footer>
+    <p>© 2025 Marjorie KOEHL</p>
+  </footer>
+
+  <!-- /SECTION FOOTER -->
+
+  <script src="script.js"></script>
+</body>
+</html>
