@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Détails du Projet SAE Tracker Solaire</title>
+  <link rel="stylesheet" href="css/style_general.css">
+</head>
+<body>
+  <header>
+    <h1>SAE_Tracker</h1>
+
+    <nav>
+        <ul>
+          <li><a href="index.html">← Retour au portfolio</a></li>
+          <li><a href="PROJETS.html"> Accéder aux projets</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <section class="projet-detail visible">
+    <div class="projet-header">
+        <img src="images/#.png" alt="Image du Projet SAE_SCOTT">
+      <div>
+        <h2>Tracker Solaire</h2>
+        <p><strong>Description :</strong> Un projet de BUT 1 : Conception d'une étuve à bois.</p>
+        <p><strong>Compétences utilisées :</strong><ul>
+          <li><a href="SAE_Tracker.html#C1">Compétence 1 : Contribuer à la rédaction d’un cahier des charges</a></li>
+          <li><a href="SAE_Tracker.html#C2">Compétence 2 : Rediger un cahier des charges</a></li>
+        </ul></p>
+      </div>
+    </div>
+        <div class="projet-description">
+            <h3>Objectif du Projet</h3>
+            <p>Le projet consiste à concevoir et réaliser un tracker solaire connecté destiné à être installé sur le toit d’une maison. Un tracker solaire est un panneau photovoltaïque capable de suivre automatiquement le mouvement du soleil dans le ciel. Cela permet de capter un maximum d’énergie solaire en modifiant de manière automatique la position du panneau en fonction de l’orientation du soleil. De plus, les données récoltées par le système (ex : puissance, température, inclinaison…) seront transmises à un M5 Core via une connexion en radio FM avec l’installation située sur le toit. </p>
+            <br>
+          </div>
+        <div id="C1">
+        <h3>AC C1 : Contribuer à la rédaction d’un cahier des charges</h3>
+        <h4>Dans quel cadre je l’ai fait et avec quelles ressources ? </h3>
+          <p>Lors de mon BUT3 GEII, j’ai réalisé une SAE sur les panneaux solaires. 
+            J’étais dans un groupe de 4 personnes. Chaque personne a dû concevoir une partie du système afin de les rassembler à la fin. 
+            Pour ma part, j’ai été en charge de la partie capteur de lumière. 
+            Avant de commencer réellement le projet, mon équipe et moi avons rédigé un cahier des charges pour structurer notre travail et pour nous assurer de n’avoir rien oublier. 
+            Pour cela, je me suis appuyé sur mes connaissances en électronique et en informatique et enfin sur mes connaissances en composants électroniques.</p>
+          <br>
+        <h4>Comment je m’y suis pris </h3>
+        <p>Il a fallu dans un premier temps, réfléchir au fonctionnement du système général : Quel est l’objectif du projet ? Quelles vont être les différentes parties ? comment le contrôler ? Comment gérer la température, la lumière, la position ?  
+        </br>Pour ce faire, on a besoin de Servomoteurs, de Moteurs pas à pas, de capteurs de lumières à savoir des photos résistances, d'un microcontroleur pour piloter chaque partie, d'une communication Radio et enfin d'un M5 Core pour l'affichage du tout. 
+      </br> Chacun étant en charge d'une partie du système, on a rédigé notre partie pour le cahier des charges : 
+    </br> → Capteurs : Les capteurs permettent de faire savoir à l’utilisateur la puissance fournie par l’installation. Mais cela permet aussi au tracker de se positionner correctement face au soleil. Pour cela, nous aurons besoin de différents capteurs : 
+<ul>
+  <li>Température : permet de ne pas laisser le panneau solaire monter trop haut en température. En effet, si le panneau est trop chaud, la tension produite diminue. Et le rendement est donc moins important.</li>
+  <li>Tension (isolé) : permet de vérifier que le panneau délivre bien une tension électrique et est donc fonctionnel. La tension est un des éléments pour calculer la puissance électrique de sortie.</li>
+  <li>Courant (isolé) : permet aussi de vérifier que le panneau est fonctionnel. Le courant est le deuxième élément qui permet de calculer la puissance électrique de sortie du système.</li>
+  <li>Capteur de position du soleil : En s’inspirant d’un projet de capteur, on va s’inspirer de ce dernier pour réaliser le capteur voulu (lien du capteur). En s’appuyant sur le schéma plus haut, on peut voir que ce capteur permet de repérer la position du soleil dans le ciel. Suite à cela, le microcontrôleur pourra adapter le servomoteur X et Y pour ajuster la position du panneau. </li>
+</ul>
+        </p>
+        <br>
+        <h4>Quels ont été mes résultats et comment m’y prendrais-je si j’avais à le refaire… </h3>
+        <p> J’ai réussi à développer l’entièreté de la carte et tester son bon fonctionnement. Concernant le cahier des charges, il m’a été difficile au départ d'assimiler l’ensemble des fonctions nécessaires pour la création de ce projet. Je n’arrivais pas forcément à faire le lien entre toutes les parties du projet (cartes, codes…). Cependant, lorsque le projet a commencé à se structurer et à prendre forme, j’ai réussi à imaginer un rendu final et à écrire le dossier de conception du projet. Le fait que chacun soit responsable d’une partie indépendante du projet, nous a obligé à nous intéresser aux cartes des autres membres du groupe. En conclusion, l’entraide et l’esprit d’équipe ont été bénéfiques au projet.</p>
+      </div>
+        <h3>Traces</h3>
+        <ul>
+            <li>Trace 1</li>
+            <img src="images/#.png" alt="Trace 1">
+            <li>Trace 2</li>
+            <img src="images/#.png" alt="Trace 2">
+        </ul>
+      
+        <h3>Capture d'écran / Démo</h3>
+        <img src="images/#.png" alt="Video Tracker">
+        </div>
+      <div id="C2">
+        <h3>AC C2 : Prouver la pertinence de ses choix technologiques</h3>
+        <h4>Dans quel cadre je l’ai fait et avec quelles ressources ? </h3>
+          <p>Durant ma troisième année de BUT GEII au sein du parcours ESE, j’ai participé à un projet de conception et réalisation d’un tracker solaire.
+          Le projet consiste à concevoir et réaliser un tracker solaire connecté destiné à être installé sur le toit d’une maison. Un tracker solaire est un panneau photovoltaïque capable de suivre automatiquement le mouvement du soleil dans le ciel. Cela permet de capter un maximum d’énergie solaire en modifiant de manière automatique la position du panneau en fonction de l’orientation du soleil. De plus, les données récoltées par le système (ex : puissance, température, inclinaison…) seront transmises à un M5 Core via une connexion en radio FM avec l’installation située sur le toit. Pour aller plus loin, si l’utilisateur n’est pas chez lui, un site web lui permettra à tout moment de consulter les données du tracker et de former d’éventuelles statistiques sur, par exemple, la puissance générée du panneau en fonction du temps. Pour ma part, je me suis occupée de la carte constituée de capteur de position en fonction du soleil. 
+          Pour m’aider dans ce projet, je me suis servie de mes cours en électronique ainsi qu’en capteur. De plus, mes connaissances en informatique m’ont été utiles. </p>
+        <h4>Comment je m’y suis pris </h3>
+        <p>En effectuant des recherches, je me suis inspirée d’un projet de capteur. En s’appuyant sur le schéma ci-dessous, on peut voir que ce capteur permet de repérer la position du soleil dans le ciel. Suite à cela, le microcontrôleur pourra adapter le servomoteur X et Y pour ajuster la position du panneau. 
+<br>Pour réaliser ce système, j’ai réalisé une carte électronique composée de capteur de lumière (photorésistance) ainsi que des comparateurs à seuil pour permettre au système de détecter le jour et la nuit. J’ai choisi des photorésistance pour ce projet car celles-ci possèdent une grande sensibilité à la lumière. Cette sensibilité est un avantage car elles vont permettre de détecter les variations de luminosité du soleil à toute heure de la journée (aube, journée, crépuscule et nuit). De plus, ce sont des composants simples à utiliser en regard de leur conception compacte, de leur rentabilité et de leur facilité d'intégration. 
+Les comparateurs à seuil sont également des composants simples d’utilisation. La patte négative va être branchée à un pont diviseur de tension qui va permettre de générer un seuil. Selon les résistances choisies, on obtient la tension souhaitée. Cette tension va être comparée à la tension que renvoie les photorésistances selon l’heure de la journée. Si la tension est supérieure à celle du seuil alors on se trouve en journée et si la tension est plus faible que celle du seuil, on se trouve durant la nuit.
+
+
+
+        </p>
+        <h4>Quels ont été mes résultats et comment m’y prendrais-je si j’avais à le refaire… </h3>
+        <p>Les tests sur platine, avant de concevoir une carte électronique, on était concluant. J’ai donc pu passer à la conception de la carte sur le logiciel Kicad. J’ai conçu le PCB et je les ai imprimé ainsi que soudé les composants dessus. Après cette étape, j’ai réalisé une série de tests afin de valider son bon fonctionnement.  
+        </p>
+      </div>
+        <h3>Traces</h3>
+        <ul>
+            <li>Trace 1</li>
+            <img src="images/#.png" alt="Trace 1">
+            <li>Trace 2</li>
+            <img src="images/#.png" alt="Trace 2">
+        </ul>
+      
+        <h3>Capture d'écran / Démo</h3>
+        <img src="images/C_SCOTT.png" alt="Capture d'écran du projet">
+        </div>
+  </section>
+  
+
+</body>
+</html>
+

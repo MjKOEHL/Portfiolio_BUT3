@@ -198,13 +198,16 @@
 
 
 .event.BUT3 .marker {
-  fill: red;
+  fill: rgb(17, 167, 17);
 }
 .event.BUT2 .marker {
-  fill: blue
+  fill: rgb(3, 172, 250)
 }
-.event.family .marker {
-  fill: var(--melange_b_red);
+.event.BUT1 .marker {
+  fill: rgb(230, 39, 55);
+}
+.event.Lycée .marker {
+  fill: rgb(255, 106, 0);
 }
 .content time {
   font-family: 'Segoe UI', sans-serif;
@@ -227,7 +230,7 @@
     padding-inline: 1em;
   }
 
-  .event:is(.event.BUT2, .event.family .projects) {
+  .event:is(.event.BUT2, .event.Lycée) {
     flex-direction: row-reverse;
 
     .content {
