@@ -32,8 +32,17 @@
     
     <div class="projet-description">
             <h3>Objectif du Projet</h3>
-            <p>Durant l'alternance j'ai effectué des missions liées aux Travaux et à la Maintenance de controle d'accès.</p>
-            <br>
+            <p>Durant la SAE de BDD, nous avons du créer un site reprennant les tables de l'ADE actuel. Nous devions créé un site permettant l'utilisation spécifique des professeurs : AdeProf. 
+            <br> Les fonctionnalités de base que l’on peut y retrouver sont les suivantes : 
+
+-	Affichage global de tous les cours sur l’histogramme entre le 1er septembre 2024 et la date actuelle <br>
+-	Recherche d’un enseignant, sous barre de recherche et menu déroulant, pour accéder à sa page détaillée <br>
+-	Filtrage en fonction de 2 dates données <br>
+-	Informations liées à la recherche de l’enseignant: 
+    <li>Informations de l’enseignant avec ses activités rangées par catégories TD,TP,CM et Autres</li>
+    <li>Détails des activités de l’enseignant par module avec la duration par module et duration totale de l’enseignant</li>
+    <li>Affichage d’un graphique pour visualiser le volume des activités et résumé des activités ranger par module</li>
+<br>
           </div>
         <div id="I2">
         <h3>AC I2 : Produire une procédure d’installation et mise en service d’un système</h3>
@@ -52,19 +61,121 @@ Pour l’utilisation du site web, plusieurs prérequis sont nécessaires, parmis
 Une fois cette étape effectuée, une page du navigateur choisie par défaut sur le poste va s’ouvrir, laissant apparaître un sablier. Cela indique que la machine virtuelle est activée.
 Une fois que cette étape est achevée, veuillez ouvrir un nouvel onglet sur le navigateur utilisé, puis écrire l’adresse IP 192.168.56.101 dans la nouvelle barre de recherche comme suit.
 </p>
+<img src="images/I2_1.png" alt="I2_1">
+<h4>Installation du logiciel XAMPP</h4>
+<p>
+Si aucune machine virtuelle n’est installée sur le poste utilisé, une solution alternative reste possible. Cela nécessite cependant l’utilisation d’une connexion internet. Par le biais de cette dernière, nous allons installer le logiciel XAMPP, qui pourra autant simuler un serveur qu’une machine virtuelle. Ce manuel ne traite que l’installation du logiciel XAMPP, mais d’autres logiciels existent  tel que WampServer.
+Pour installer ce logiciel, veuillez vous rendre lien suivant <a href="https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.2.12/xampp-windows-x64-8.2.12-0-VS16-installer.exe">"https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.2.12/xampp-windows-x64-8.2.12-0-VS16-installer.exe"</a>
+Une fenêtre de téléchargement va alors se lancer. Cliquez sur “Enregistrer” comme suit:
+</p>
+<img src="images/I2_2.png" alt="I2_2">
+<p>
+    Une fois le téléchargement terminé, double-cliquez sur cet installateur, qui se présente comme ci-dessous. À partir de cette étape, la connexion internet de votre poste n’est plus requise.
+</p>
+<img src="images/I2_4.png" alt="I2_4">
+<p>
+    Si une fenêtre similaire à celle-ci venait à apparaître, cliquez sur “OK”.
+</p>
+<img src="images/I2_5.png" alt="I2_5">
+<p>
+    Une nouvelle fenêtre d’autorisation d’accès du logiciel va alors s’ouvrir. Cliquez sur “Oui”.
+Maintenant que ces étapes ont été effectuées, l’installation du logiciel XAMPP peut débuter. Pour cela, un menu d’installation de XAMPP va se lancer. Cliquez sur “Next”.
+</p>
+<img src="images/I2_6.png" alt="I2_6">
+<p>
+  Sur la fenêtre suivante, une liste est présente sur le côté gauche. Veuillez ne laisser cochées que les options “MySQL” ainsi que “phpMyAdmin”. Cliquez ensuite sur “Next”.        </p>
+</p>
+   <img src="images/I2_7.png" alt="I2_7">  
+<p>
+    Sur la fenêtre suivante, cliquez sur “Next”.
+</p>
+<img src="images/I2_8.png" alt="I2_8">  
+<p>
+Sélectionnez la langue du logiciel selon les besoins. Les deux choix disponibles sont l’anglais et l’allemand. Une fois que la langue désirée a été choisie, cliquez sur “Next”.
+</p>
+<img src="images/I2_9.png" alt="I2_9">  
+<p>
+    Le téléchargement du logiciel XAMPP va alors débuter sur votre poste.
+</p>
+<img src="images/I2_10.png" alt="I2_10">  
+<p>
+Après que la barre de chargement précédente ait été complétée, il est très probable qu’une fenêtre d’alerte de sécurité s’ouvre. Si tel est le cas, il suffit de laisser cochées les options comme ci-dessous. Cliquez ensuite sur “Autoriser l’accès”.
+</p>
+<img src="images/I2_11.png" alt="I2_11">  
+<p>Si la fenêtre suivante s’affiche, cela signifie que l’installation de XAMPP est désormais terminée. Veillez à laisser cochée l’option “Do you want to start the Control Panel now?”, puis cliquez sur “Finish”</p>
+<img src="images/I2_12.png" alt="I2_12">  
+<p>La fenêtre suivante va alors s’ouvrir. Il s’agit du panneau de contrôle du logiciel XAMPP. Si vous désirez accéder à l’ensemble des fonctionnalités du site web, veillez à ce qu’il y ai les appellations “Stop” dans l’encadré rouge. Si ce n’est pas le cas, cliquez sur ces mêmes boutons encadrés en rouge (voir exemple ci-dessous).</p>
+<img src="images/I2_13.png" alt="I2_13">  
+<p>
+    Au moment de cliquer sur le bouton en face de l’option “MySQL”, une nouvelle fenêtre de sécurité peut se lancer. Tout en gardant les options cochées comme ci-dessous, appuyez sur “Autoriser l’accès”
+</p>
+<img src="images/I2_14.png" alt="I2_14"> 
+<p>
+    Si les modules requis sont activés, vous devriez obtenir le panneau de contrôle de XAMPP qui se présente comme suit.
+</p>
+<img src="images/I2_15.png" alt="I2_15"> 
+<p>
+    Ci-dessus, si les options “Apache” ainsi que “MySQL” sont sur un fond rectangulaire de couleur verte, cela indique que tous les modules nécessaires au bon fonctionnement du site web sont fonctionnels.
+</p>
+<h4>Importation de la base de données</h4>
+<p>L’importation de la base de données est également nécessaire au bon fonctionnement du site web. Pour ce faire, nous allons utiliser l’outil phpMyAdmin, disponible soit par la machine virtuelle, soit par XAMPP. 
+Si vous utilisez XAMPP, ouvrez une nouvelle fenêtre dans votre navigateur. Dans la barre de recherche, inscrivez <a href="https://localhost/dashboard/">"https://localhost/dashboard/"</a>. Une redirection vers la page ci-dessous va avoir lieu. Cliquez sur “phpMyAdmin”.
+</p>
+<img src="images/I2_16.png" alt="I2_16"> 
+<p>
+Si vous utilisez la machine virtuelle, inscrivez http://192.168.56.101/phpmyadmin/ dans la barre de recherche de votre navigateur. Une autre redirection est alors effectuée vers la page web ci-dessous.    
+</p>
+<img src="images/I2_17.png" alt="I2_17"> 
+<p>
+Sur cette nouvelle page, cliquez sur “Nouvelle base de données”, comme visible ci-contre.
+<img src="images/I2_18.png" alt="I2_18"> 
+</p>
+<p>Ensuite, remplissez le champ encadré en rouge ci-dessous avec le texte “sae2024”. Veillez à noter exactement la même orthographe. Poursuivez le processus en cliquant sur “Créer”.</p>
+<img src="images/I2_19.png" alt="I2_19">
+<p>Sur le menu à gauche de la page web, cliquez sur “sae2024”.
+</p>
+<img src="images/I2_20.png" alt="I2_20">
+<p>Dans la fenêtre qui s’affiche, cliquez sur “Importer”, présent dans la barre latérale en haut du site.</p>
+<img src="images/I2_21.png" alt="I2_21">
+<p>Sur la partie de la page web présentée ci-contre, sélectionnez l’option “Choisir un fichier”. Ensuite, dans le dossier global du téléchargement du site AdeProf, sélectionnez le fichier “sae2024.sql”.</p>
+<img src="images/I2_22.png" alt="I2_22">
+<p>Si le nom du fichier n’est pas renseigné dans le champ à compléter, veuillez réitérer l’opération. Dans le cas contraire, descendez en bas de cette même page, puis cliquez sur “Importer”.</p>
+<img src="images/I2_23.png" alt="I2_23">
+<p>Si le message ci-dessous s’affiche, la base de données du site a alors été correctement importée dans phpMyAdmin. </p>
+<p>
+    Si ce n’est pas le cas, cliquez sur “sae2024” présent sur la gauche du site web, dans la liste.
+</p>
+<img src="images/I2_24.png" alt="I2_24">
+<p>Ensuite, allez dans l’onglet “Opérations” de la barre latérale en haut du site, puis descendez sur la page jusqu’à apercevoir l’option “Supprimer la base de données (DROP)”. Cliquez ensuite sur cette dernière.</p>
+<img src="images/I2_25.png" alt="I2_25">
+<p>
+    Désormais, la base de données que vous aviez anciennement créée est maintenant effacée. Répéter maintenant le processus d’importation de la base de données depuis le début.
+</p>
+<br>
+<h4>Placement du site dans XAMPP</h4>
+<p>
+Pour l’utilisation de XAMPP, le dossier du site web doit être placé dans un emplacement spécifique. En allant dans votre explorateur de fichiers, tapez C:\xampp\htdocs dans la barre de recherche centrale, en haut. L’emplacement actuel dans l’explorateur est celui dans lequel vous devez placer le dossier du site .
+</p>
+<img src="images/I2_26.png" alt="I2_26">
+<p>Dans notre cas, déposez le dossier AdeProf, issu du fichier en format .zip, puis passez à l’étape de lancement du site web. 
+<br><h4>Lancement du site web</h4>
+<p>Pour lancer le site web depuis un navigateur, il vous suffit d’écrire l’URL suivante: <a href="https://localhost/AdeProf/">"https://localhost/AdeProf/"</a> .
+Cela vous emmènera directement sur la page d'accueil de notre site AdeProf. 
+Vous devriez avoir votre visuel de site praticable pour l’utilisation.
+</p>
+<img src="images/I2_27.png" alt="I2_27">
 
-
-        </p>
-        <br>
+  <br>
         <h4>Quels ont été mes résultats et comment m’y prendrais-je si j’avais à le refaire… </h3>
-        <p> Lors du test fonctionnel, tout a fonctionné correctement. Les signaux sonores retentissaient bien lors de l'appui sur le Bouton Poussoir. Les cartes Radio émettaient bien l'alerte panique</p>
-      </div>
+        <p>L'installation du site est effective et le site est fonctionnel. Si j'avais à le refaire, je serai plus à l'aise avec le logiciel XAMPP qui était pour moi inconnu.  </p>
+    </div>
+    <br>
         <h3>Traces</h3>
         <ul>
             <li>Trace 1</li>
-            <img src="images/#.png" alt="Trace 1">
+            <img src="images/I2_29.png" alt="Trace 1">
             <li>Trace 2</li>
-            <img src="images/#.png" alt="Trace 2">
+            <img src="images/I2_28.png" alt="Trace 2">
         </ul>
       <br>
         </div>
